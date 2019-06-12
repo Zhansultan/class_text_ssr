@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Find text language</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/style/all.css}">
+</head>
+<body>
+<section class="content">
+    <form action="#" th:action="@{/index}" th:object="${text}" method="post">
+        <div class="form-text">
+            <span class="form-text__title" >Введите текст</span> <input class="form-text__val" type="text" th:field="*{content}" required>
+        </div>
+        <div class="form-btn">
+            <input class="form-btn__btn" type="submit" value="Проверить">
+        </div>
+    </form>
+</section>
+</body>
+</html>
